@@ -34,20 +34,28 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ================= Scroll To Top Button =================
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-
+// Scroll to top
+const scrollBtn = document.getElementById("scrollTopBtn");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        scrollTopBtn.style.display = "flex";
-    } else {
-        scrollTopBtn.style.display = "none";
-    }
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
-scrollTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
+scrollBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// Dark / Light Mode
+const toggleBtn = document.getElementById("themeToggle");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.onclick = () => {
+    body.classList.toggle("dark");
+    const isDark = body.classList.contains("dark");
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+};
