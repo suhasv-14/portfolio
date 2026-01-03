@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Suhas V | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
     <div class="container nav-inner">
         <div class="logo">⚡</div>
@@ -30,6 +31,7 @@
 
 <main>
 
+<!-- HERO -->
 <section id="home" class="hero">
     <div class="container hero-inner">
         <h1>SUHAS V</h1>
@@ -37,6 +39,7 @@
     </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="section">
     <div class="container">
         <h2>About Me</h2>
@@ -47,6 +50,7 @@
     </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education" class="section surface">
     <div class="container">
         <h2>Education</h2>
@@ -63,6 +67,7 @@
     </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="section">
     <div class="container">
         <h2>Skills</h2>
@@ -78,73 +83,107 @@
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="section surface">
     <div class="container">
         <h2>Projects</h2>
 
         <div class="card project-card">
             <h3>File Management System using Tree Data Structure and LRU Cache</h3>
+
             <p><strong>Problem Statement:</strong> Traditional file access systems suffer from slow retrieval when frequently accessed files are not optimized in memory.</p>
+
             <p><strong>Approach:</strong> Implemented a hierarchical file structure using tree data structures and integrated an LRU cache.</p>
+
             <ul>
                 <li>Tree-based directory structure</li>
                 <li>LRU cache for optimized file access</li>
                 <li>Efficient search and traversal</li>
             </ul>
+
             <p><strong>Technologies:</strong> Python, Data Structures</p>
+
             <p><strong>Outcome:</strong> Improved file access efficiency and memory management understanding.</p>
-            <a href="https://github.com/suhasv-14/File-Management-Web-App-using-Django" target="_blank">GitHub Repository</a>
+
+            <a href="https://github.com/suhasv-14/File-Management-Web-App-using-Django" target="_blank">
+                GitHub Repository
+            </a>
         </div>
 
         <div class="card project-card">
             <h3>Customer Segmentation using Machine Learning</h3>
+
             <p><strong>Problem Statement:</strong> Businesses struggle to identify and target different customer groups effectively.</p>
+
             <p><strong>Approach:</strong> Applied unsupervised learning techniques to cluster customers.</p>
+
             <ul>
                 <li>Data preprocessing and feature scaling</li>
                 <li>K-Means clustering</li>
                 <li>Interactive data visualization</li>
             </ul>
+
             <p><strong>Technologies:</strong> Python, Machine Learning, Streamlit</p>
+
             <p><strong>Outcome:</strong> Enabled data-driven marketing decisions.</p>
-            <a href="https://github.com/suhasv-14/Customer-Segmentation" target="_blank">GitHub Repository</a>
+
+            <a href="https://github.com/suhasv-14/Customer-Segmentation" target="_blank">
+                GitHub Repository
+            </a>
         </div>
     </div>
 </section>
 
-<section id="resume" class="section">
-    <div class="container">
-        <h2>Resume</h2>
-        <p>You can download my resume for detailed information about my education, projects, and technical skills.</p>
-        <a href="assets/resume_suhas.pdf" download class="primary-btn">Download Resume</a>
+<!-- RESUME -->
+<section id="resume" class="section surface">
+    <div class="container resume-box">
+        <div class="resume-content">
+            <h2>Resume</h2>
+            <p>
+                You can download my resume for detailed information about my education,
+                projects, and technical skills.
+            </p>
+            <a href="assets/resume_suhas.pdf" download class="primary-btn">
+                Download Resume
+            </a>
+        </div>
     </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section surface">
-    <div class="container">
+    <div class="container contact-box">
         <h2>Contact</h2>
-        <p>Email: suhasvishwanath14@gmail.com</p>
-        <p>GitHub: github.com/suhasv-14</p>
-        <p>LinkedIn: linkedin.com/in/suhas-v-364045214</p>
+        <div class="contact-items">
+            <p><strong>Email:</strong> suhasvishwanath14@gmail.com</p>
+            <p><strong>GitHub:</strong> github.com/suhasv-14</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/suhas-v-364045214</p>
+        </div>
     </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
-    <div class="container footer-inner">
-        <div>
+    <div class="container footer-grid">
+        <div class="footer-left">
             <h3>SUHAS V</h3>
             <p>Software Engineering • Systems • ML</p>
         </div>
-        <div class="footer-links">
+
+        <div class="footer-right">
             <a href="https://github.com/suhasv-14" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/suhas-v-364045214" target="_blank">LinkedIn</a>
         </div>
     </div>
-    <p class="footer-bottom">© 2026 Suhas V. All rights reserved.</p>
+
+    <div class="footer-bottom">
+        © 2026 Suhas V. All rights reserved.
+    </div>
 </footer>
 
+<!-- SCROLL TO TOP -->
 <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
 
 <script src="js/script.js"></script>
