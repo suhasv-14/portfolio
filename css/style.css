@@ -1,7 +1,6 @@
 :root {
     --bg-main: #f6f8fc;
     --bg-surface: #ffffff;
-    --bg-dark: #0f172a;
 
     --text-main: #0f172a;
     --text-muted: #475569;
@@ -18,7 +17,11 @@ body.dark {
     --text-muted: #9ca3af;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Inter", "Segoe UI", sans-serif;
@@ -38,8 +41,8 @@ body {
 /* NAVBAR */
 .navbar {
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     background: var(--bg-surface);
     box-shadow: var(--shadow);
     z-index: 1000;
@@ -48,11 +51,13 @@ body {
 .nav-inner {
     height: 72px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo { font-size: 22px; }
+.logo {
+    font-size: 22px;
+}
 
 .nav-links {
     list-style: none;
@@ -70,8 +75,8 @@ body {
 .nav-links a::after {
     content: "";
     position: absolute;
-    bottom: -6px;
     left: 0;
+    bottom: -6px;
     width: 0;
     height: 2px;
     background: var(--accent);
@@ -80,6 +85,16 @@ body {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.theme-toggle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -110,10 +125,9 @@ body {
     background: var(--bg-surface);
 }
 
-/* HEADINGS */
 h2 {
-    margin-bottom: 24px;
     font-size: 28px;
+    margin-bottom: 24px;
 }
 
 /* CARDS */
@@ -132,8 +146,43 @@ h2 {
 }
 
 /* SKILLS */
-.skills-list { list-style: none; }
-.skills-list li { margin-bottom: 14px; }
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    margin-bottom: 14px;
+}
+
+/* RESUME */
+.resume-box {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-content {
+    max-width: 600px;
+    text-align: center;
+    background: var(--bg-surface);
+    padding: 48px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.resume-content p {
+    margin: 16px 0 28px;
+    color: var(--text-muted);
+}
+
+/* CONTACT */
+.contact-box {
+    max-width: 600px;
+}
+
+.contact-items {
+    line-height: 2;
+    color: var(--text-muted);
+}
 
 /* BUTTONS */
 .primary-btn {
@@ -141,7 +190,7 @@ h2 {
     padding: 12px 36px;
     border-radius: 999px;
     background: var(--accent);
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s;
@@ -154,24 +203,47 @@ h2 {
 /* FOOTER */
 .footer {
     background: var(--bg-surface);
-    padding: 60px 0 20px;
+    margin-top: 80px;
 }
 
-.footer-inner {
+.footer-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 48px 0;
 }
 
-.footer-links a {
+.footer-left h3 {
+    margin-bottom: 6px;
+}
+
+.footer-right a {
     margin-left: 20px;
     text-decoration: none;
     color: var(--text-main);
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+.footer-right a:hover::after {
+    width: 100%;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
+    padding: 16px 0 32px;
+    font-size: 14px;
     color: var(--text-muted);
 }
 
@@ -197,19 +269,23 @@ h2 {
     transform: translateY(-4px);
 }
 
-/* THEME TOGGLE */
-.theme-toggle {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: none;
-    background: var(--accent);
-    color: white;
-    cursor: pointer;
-}
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .footer-inner { flex-direction: column; gap: 20px; }
+    .nav-links {
+        display: none;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-right a {
+        margin: 0 10px;
+    }
+
+    .resume-content {
+        padding: 32px;
+    }
 }
