@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Scroll to Top Button
+// ================= Scroll To Top Button =================
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
