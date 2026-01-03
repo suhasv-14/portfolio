@@ -114,7 +114,7 @@ body {
 
 /* HERO */
 .hero {
-    padding: 90px 0 70px;
+    padding: 120px 0 90px;
     background: linear-gradient(135deg, #e0e7ff, var(--bg-main));
 }
 
@@ -133,7 +133,7 @@ body {
 
 /* SECTIONS */
 .section {
-    padding: 64px 0;
+    padding: 90px 0;
 }
 
 .surface {
