@@ -311,3 +311,18 @@ h2 {
     color: #ffffff;
     transform: translateY(-2px);
 }
+
+.repo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.repo-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
