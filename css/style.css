@@ -289,3 +289,25 @@ h2 {
         padding: 32px;
     }
 }
+
+/* ================= GITHUB REPO BUTTON ================= */
+.repo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.repo-btn:hover {
+    background: var(--accent);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
