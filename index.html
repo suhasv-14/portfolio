@@ -2,57 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Suhas V | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-    <h2 class="logo">⚡</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">⚡</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<!-- Home -->
-<section id="home" class="section home">
+<main>
+
+<!-- ================= HOME / HERO ================= -->
+<section id="home" class="hero">
     <h1>SUHAS V</h1>
     <p>Open for opportunities | Software Development | DevOps | AI/ML roles</p>
 </section>
 
-<!-- About -->
+<!-- ================= ABOUT ================= -->
 <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-        I would like to obtain a challenging position as a fresher role where I can leverage my academic background in computer science and my passion for developing innovative software solutions. 
+        I would like to obtain a challenging position as a fresher role where I can leverage my academic background in computer science and my passion for developing innovative software solutions.
         Eager to contribute to a dynamic team, utilize my programming skills, and continuously learn new technologies to drive the success of the organization while growing professionally.
     </p>
 </section>
 
-<!-- Education -->
-<section id="education" class="section">
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section light-bg">
     <h2>Education</h2>
+
     <div class="card">
         <h3>M.Tech – Software Engineering</h3>
         <p>RV College of Engineering | 2025 – 2027</p>
     </div>
+
     <div class="card">
         <h3>B.E – Information Science and Engineering</h3>
         <p>Sri Venkateshwara College of Engineering | 2021 – 2025</p>
     </div>
 </section>
 
-<!-- Skills -->
+<!-- ================= SKILLS ================= -->
 <section id="skills" class="section">
     <h2>Skills</h2>
+
     <ul class="skills-list">
         <li><strong>Languages:</strong> Python, C, Java, MySQL, HTML, CSS, JavaScript</li>
         <li><strong>Concepts:</strong> DSA, OOP, DBMS, OS</li>
@@ -64,23 +71,22 @@
     </ul>
 </section>
 
-<section id="projects" class="section">
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section light-bg">
     <h2>Projects</h2>
 
-    <!-- Project 1 -->
     <div class="card project-card">
-        <h3>File management OS level using tree data structures with LRU cache</h3>
+        <h3>File Management System using Tree Data Structure and LRU Cache</h3>
 
-        <p><strong>Problem Statement:</strong>  
+        <p><strong>Problem Statement:</strong><br>
         Traditional file access systems suffer from slow retrieval when frequently accessed
         files are not optimized in memory.</p>
 
-        <p><strong>Approach:</strong>  
+        <p><strong>Approach:</strong><br>
         Implemented a hierarchical file structure using tree data structures.
         Integrated an LRU (Least Recently Used) cache to store recently accessed files
         for faster retrieval.</p>
 
-        <p><strong>Key Features:</strong></p>
         <ul>
             <li>Tree-based directory structure</li>
             <li>LRU cache for optimized file access</li>
@@ -89,25 +95,25 @@
 
         <p><strong>Technologies:</strong> Python, Data Structures</p>
 
-        <p><strong>Outcome:</strong>  
+        <p><strong>Outcome:</strong>
         Improved file access efficiency and gained deeper understanding of
         memory management concepts.</p>
 
-        <a href="https://github.com/suhasv-14/file-management-os-level" target="_blank">GitHub Repository</a>
+        <a href="https://github.com/suhasv-14/File-Management-Web-App-using-Django" target="_blank">
+            GitHub Repository
+        </a>
     </div>
 
-    <!-- Project 2 -->
     <div class="card project-card">
         <h3>Customer Segmentation using Machine Learning</h3>
 
-        <p><strong>Problem Statement:</strong>  
+        <p><strong>Problem Statement:</strong><br>
         Businesses struggle to identify and target different customer groups effectively.</p>
 
-        <p><strong>Approach:</strong>  
+        <p><strong>Approach:</strong><br>
         Applied unsupervised learning techniques to cluster customers based on
         purchasing behavior and visualized insights using an interactive interface.</p>
 
-        <p><strong>Key Features:</strong></p>
         <ul>
             <li>Data preprocessing and feature scaling</li>
             <li>K-Means clustering</li>
@@ -116,15 +122,16 @@
 
         <p><strong>Technologies:</strong> Python, Machine Learning, Streamlit</p>
 
-        <p><strong>Outcome:</strong>  
+        <p><strong>Outcome:</strong>
         Enabled data-driven marketing decisions and strengthened ML pipeline knowledge.</p>
 
-        <a href="https://github.com/suhasv-14/Customer-Segmentation" target="_blank">GitHub Repository</a>
+        <a href="https://github.com/suhasv-14/Customer-Segmentation" target="_blank">
+            GitHub Repository
+        </a>
     </div>
-
 </section>
 
-<!-- Resume -->
+<!-- ================= RESUME ================= -->
 <section id="resume" class="section">
     <h2>Resume</h2>
     <p>
@@ -137,15 +144,17 @@
     </a>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="section">
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section light-bg">
     <h2>Contact</h2>
     <p>Email: suhasvishwanath14@gmail.com</p>
     <p>GitHub: github.com/suhasv-14</p>
     <p>LinkedIn: linkedin.com/in/suhas-v-364045214</p>
 </section>
 
-<script src="js/script.js"></script>
+</main>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <p>© 2026 SUHAS V</p>
     <p>
@@ -153,6 +162,7 @@
         <a href="https://www.linkedin.com/in/suhas-v-364045214" target="_blank">LinkedIn</a>
     </p>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
-
