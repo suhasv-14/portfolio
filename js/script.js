@@ -47,7 +47,7 @@ scrollBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-/* Theme */
+/* Theme toggle */
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark");
     themeToggle.textContent = "☀️";
